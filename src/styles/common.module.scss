@@ -1,1 +1,19 @@
 // TODO
+.container {
+  max-width: 700px;
+  margin: 4rem auto;
+}
+
+.posts {
+  max-width: 700px;
+  margin: 2rem auto 0;
+
+  a {
+    display: block;
+    // cada post precedido de outro post
+    & + a {
+      margin-top: 2rem;
+      padding-top: 1.125rem;
+    }
+  }
+}
